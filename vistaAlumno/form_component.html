@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Sistema de Rectificacion de Matricula</title>
 
-            <!-- Bootstrap CSS -->    
-            <link href="../css/bootstrap.min.css" rel="stylesheet">
-            <!-- bootstrap theme -->
-            <link href="../css/bootstrap-theme.css" rel="stylesheet">
-            <!--external css-->
-            <!-- font icon -->
-            <link href="../css/elegant-icons-style.css" rel="stylesheet" />
-            <link href="../css/font-awesome.min.css" rel="stylesheet" />    
-            <!-- easy pie chart-->
-            <link href="../css/style.css" rel="stylesheet">
-            <link href="../css/style-responsive.css" rel="stylesheet" />
-          </head>
-  <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Rectificacion de Matricula</title>
 
-  <!-- container section start -->
-  <section id="container" class="">
-      <!--header start-->
-      <header class="header dark-bg">
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="../css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style-responsive.css" rel="stylesheet" />
+    <link href="../css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- container section start -->
+    <section id="container" class="">
+        <!--header start-->
+
+        <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
@@ -31,8 +35,8 @@
             <a href="index.html" class="logo">Sistema de Recticacion de Matricula <span class="lite">FISI </span></a>
             <!--logo end-->
 
-<!--En esta parte cominza el menu personal del usuario-->
-            <div class="top-nav notification-row">                
+            <!--En esta parte cominza el menu personal del usuario-->
+            <div class="top-nav notification-row">
                 <ul class="nav pull-right top-menu">
                     <!-- -->
                     <li class="dropdown">
@@ -57,279 +61,281 @@
                     </li>
                     <!-- user login dropdown end -->
                 </ul>
-<!-- notificatoin dropdown end-->
+                <!-- notificatoin dropdown end-->
             </div>
-      </header>      
-      <!--header end-->
+        </header>
+        <!--header end-->
 
-<!--Comienzo de la barra de navegacion -->
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu">                
-                  <li class="active">
-                      <a class="" href="index.html">
-                          <i class="icon_house_alt"></i>
-                          <span>Inicio</span>
-                      </a>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_document_alt"></i>
-                          <span>Solicitudes</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="form_component.html">Generar Solucitud</a></li>                          
-                          <li><a class="" href="form_validation.html">Visualizar Solicitud</a></li>
-                      </ul>
-                  </li>                                
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>Tables</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="basic_table.html">Basic Table</a></li>
-                      </ul>
-                  </li>
-                  
-              </ul>
-              <!-- sidebar menu end-->
-          </div>
-      </aside>
-<!--======Fin de la barra de navegacion============================================================================= -->
+        <!--Comienzo de la barra de navegacion -->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a class="" href="index.html">
+                            <i class="icon_house_alt"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_document_alt"></i>
+                            <span>Solicitudes</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="form_component.html">Generar Solucitud</a></li>
+                            <li><a class="" href="form_validation.html">Visualizar Solicitud</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon_table"></i>
+                            <span>Tables</span>
+                            <span class="menu-arrow arrow_carrot-right"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="basic_table.html">Basic Table</a></li>
+                        </ul>
+                    </li>
 
-      <!--main content start-->
-      <section id="main-content">
-          <section class="wrapper">
-		  <div class="row">
-				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa-file-text-o"></i> Generar Solicitud de Rectificación</h3>
-					<ol class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="index.html">Inicio</a></li>
-						<li><i class="icon_document_alt"></i>Solicitudes</li>
-						<li><i class="fa fa-file-text-o"></i>Generar Solicitud</li>
-					</ol>
-				</div>
-			</div>
-              <!-- Basic Forms & Horizontal Forms-->
-              <div class="row">
-                  <div class="col-lg-12">
-                      <section class="panel">
-                          <header class="panel-heading">
-                              Formato de Rectificación 
-                          </header>
-                          
-                          <table class="table table-striped table-advance table-hover">
-                           <tbody>
-                              <tr>
-                                 <th>Asignatura</th>
-                                 <th>Creditos</th>
-                                 <th>Retiro Nº Grupo</th>
-                                 <th>Ingreso Nº Grupo</th>
-                                 <th>Opciones </th>
-                              </tr>
-                              <tr>
-                                 <td>
-                                     <select class="form-control">
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--======Fin de la barra de navegacion============================================================================= -->
+
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="page-header"><i class="fa fa-file-text-o"></i> Generar Solicitud de Rectificación</h3>
+                        <ol class="breadcrumb">
+                            <li><i class="fa fa-home"></i><a href="index.html">Inicio</a></li>
+                            <li><i class="icon_document_alt"></i>Solicitudes</li>
+                            <li><i class="fa fa-file-text-o"></i>Generar Solicitud</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- Basic Forms & Horizontal Forms-->
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    Formato de Rectificación
+                                </header>
+
+                                <table class="table table-striped table-advance table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th>Asignatura</th>
+                                            <th>Creditos</th>
+                                            <th>Retiro Nº Grupo</th>
+                                            <th>Ingreso Nº Grupo</th>
+                                            <th>Opciones </th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Curso 1</option>
                                         <option>Curso 2</option>
                                      </select>
-                                 </td>
-                                  <td>
-                                     <input type="number"  class="form-control" placeholder="Nº Creditos">
-                                  <td>
-                                     <select class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control" placeholder="Nº Creditos">
+                                                <td>
+                                                    <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Grupo 1</option>
                                         <option>Grupo 2</option>
                                      </select>
-                                 </td>
-                                  <td>
-                                     <select class="form-control">
+                                                </td>
+                                                <td>
+                                                    <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Grupo 1</option>
                                         <option>Grupo 2</option>
                                      </select>
-                                 </td>                                
-                                 <td>
-                                  <div class="btn-group">
-                                      <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
-                                      <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
-                                  </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                 <td>
-                                     <select class="form-control">
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
+                                                        <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
+                                                    </div>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Curso 1</option>
                                         <option>Curso 2</option>
                                      </select>
-                                 </td>
-                                  <td>
-                                     <input type="number"  class="form-control" placeholder="Nº Creditos">
-                                  <td>
-                                     <select class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control" placeholder="Nº Creditos">
+                                                <td>
+                                                    <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Grupo 1</option>
                                         <option>Grupo 2</option>
                                      </select>
-                                 </td>
-                                  <td>
-                                     <select class="form-control">
+                                                </td>
+                                                <td>
+                                                    <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Grupo 1</option>
                                         <option>Grupo 2</option>
                                      </select>
-                                 </td>                                
-                                 <td>
-                                  <div class="btn-group">
-                                      <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
-                                      <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
-                                  </div>
-                                  </td>
-                              </tr>
-                               <tr>
-                                 <td>
-                                     <select class="form-control">
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
+                                                        <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
+                                                    </div>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Curso 1</option>
                                         <option>Curso 2</option>
                                      </select>
-                                 </td>
-                                  <td>
-                                     <input type="number"  class="form-control" placeholder="Nº Creditos">
-                                  <td>
-                                     <select class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control" placeholder="Nº Creditos">
+                                                <td>
+                                                    <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Grupo 1</option>
                                         <option>Grupo 2</option>
                                      </select>
-                                 </td>
-                                  <td>
-                                     <select class="form-control">
+                                                </td>
+                                                <td>
+                                                    <select class="form-control">
                                     <!--En esta parte se debe de cargar los datos sobre la matricula -->
                                         <option> Ninguno</option>
                                         <option>Grupo 1</option>
                                         <option>Grupo 2</option>
                                      </select>
-                                 </td>                                
-                                 <td>
-                                  <div class="btn-group">
-                                      <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
-                                      <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
-                                  </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                 <td>
-                                     <strong>Total Creditos:</strong>
-                                 </td>
-                                  <td>
-                                     <input type="number"  class="form-control" placeholder="Suma Creditos" disabled>                                  
-                                 </td>
-                              </tr>
-                                                            
-                           </tbody>
-                        </table>
-                      </section>
-                  </div>
-              </div>
-              <!-- page end-->
-                      <div class="row">
+                                                </td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
+                                                        <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
+                                                    </div>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Total Creditos:</strong>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control" placeholder="Suma Creditos" disabled>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- page end-->
+                    <div class="row">
                         <!-- Bootsrep Editor -->
-                          <!-- CKEditor -->
-                          <div class="col-lg-12">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Justificación
-                                  </header>
-                                  <div class="panel-body">
-                                      <div class="form">
-                                          <form action="#" class="form-horizontal">
-                                              <div class="form-group">
-                                                  <div class="col-sm-11">
-                                                      <textarea class="form-control ckeditor" name="editor1" rows="6"></textarea>
-                                                  </div>
-                                              </div>
-                                          </form>
-                                      </div>
-                                  </div>
-                              </section>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-lg-12">
-                          <section class="panel">
-                              <header class="panel-heading">
-                                  Generacion de Solicitud
-                              </header>
-                              <div class="panel-body">
-                                  <form class="form-horizontal" role="form">
-                                      <div class="form-group">
-                                          <div class="col-lg-offset-2 col-lg-10">
-                                               <p>Mediante la presente me hago <u><em>responsable</em></u> de lo solicitado en rectificación de matricula, ampliación de matricula y/o anulación de matricula en la unidad de trámite documentario de la Facultad de Ingeniería de Sistemas e Informática</p>
-                                              <div class="checkbox">
-                                                  <label>
-                                                      <input type="checkbox" required> Acepto los terminos y condiciones
-                                                  </label>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <div class="col-lg-offset-6 col-lg-6">
-                                              <button type="submit" class="btn btn-danger">Generar Solicitud</button>
-                                          </div>
-                                      </div>
-                                  </form>
-                              </div>
-                          </section>
-                      </div>
-                     </div> 
-                  </div>
-              </div>
-              <!-- page end-->
-          </section>
-      </section>
-      <!--main content end-->
-      <div class="text-right">
-        <div class="credits">
-            <!-- 
-                All the links in the footer should remain intact. 
+                        <!-- CKEditor -->
+                        <div class="col-lg-12">
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    Justificación
+                                </header>
+                                <div class="panel-body">
+                                    <div class="form">
+                                        <form action="#" class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="col-sm-11">
+                                                    <textarea class="form-control ckeditor" name="editor1" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    Generacion de Solicitud
+                                </header>
+                                <div class="panel-body">
+                                    <div class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <div class="col-lg-offset-6 col-lg-6">
+                                                <a href="form_validation.html" type="submit" class="btn btn-danger">Generar Solicitud</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- page end-->
+            </section>
+        </section>
+        <!--main content end-->
+        <div class="text-right">
+            <div class="credits">
+                <!--
+                All the links in the footer should remain intact.
                 You can delete the links only if you purchased the pro version.
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
             -->
-            <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <a href="https://bootstrapmade.com/free-business-bootstrap-themes-website-templates/">Business Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
         </div>
-    </div>
-  </section>
-  <!-- container section end -->
+    </section>
+    <!-- container section end -->
     <!-- javascripts -->
     <script src="../js/jquery.js"></script>
-            
-            <!-- bootstrap -->
-            <script src="../js/bootstrap.min.js"></script>
-            <!-- nice scroll -->
-            <script src="../js/jquery.scrollTo.min.js"></script>
-            <script src="../js/jquery.nicescroll.js" type="text/javascript"></script>        
-            <!--custome script for all page-->
-            <script src="../js/scripts.js"></script>
-            <!-- custom script for this page-->
-            <script type="text/javascript" src="../js/ckeditor/ckeditor.js"></script>
 
+    <!-- bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="../js/jquery.scrollTo.min.js"></script>
+    <script src="../js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!--custome script for all page-->
+    <script src="../js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script type="text/javascript" src="../js/ckeditor/ckeditor.js"></script>
+    <script src="../js/fileinput.min.js" type="text/javascript"></script>
+    <script>
+        $("#archivos").fileinput({
+            up 'showUpload': false,
+            'previewFileType': 'any'
+        }).on("filebatchselected", function(event, files) {
 
-  </body>
+            $("#archivos").fileinput("upload");
+
+        });
+    </script>
+
+</body>
+
 </html>
