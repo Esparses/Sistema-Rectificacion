@@ -7,9 +7,9 @@
     <title>Sistema de Rectificacion de Matricula</title>
 
     <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
     <!--external css-->
     <!-- font icon -->
     <link href="../css/elegant-icons-style.css" rel="stylesheet" />
@@ -23,84 +23,88 @@
     <!-- container section start -->
     <section id="container" class="">
         <!--header start-->
-        <header class="header dark-bg">
-            <div class="toggle-nav">
-                <div class="icon-reorder tooltips" data-placement="bottom"><i class="icon_menu"></i></div>
-            </div>
 
-            <!--logo start-->
-            <a href="index.html" class="logo">Sistema de Recticacion de Matricula <span class="lite">FISI </span></a>
-            <!--logo end-->
+                <header class="header dark-bg">
+                    <div class="toggle-nav">
+                        <div class="icon-reorder tooltips" data-placement="bottom"><i class="icon_menu"></i></div>
+                    </div>
 
-            <!--En esta parte cominza el menu personal del usuario-->
-            <div class="top-nav notification-row">
-                <ul class="nav pull-right top-menu">
-                    <!-- -->
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                                <img alt="" src="../img/avatar1_small.jpg">
-                            </span>
-                            <span class="username">Jenifer Smith</span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu extended logout">
-                            <div class="log-arrow-up"></div>
-                            <li class="eborder-top">
-                                <a href="#"><i class="icon_profile"></i> Mi Perfil</a>
+                    <!--logo start-->
+                    <a href="index.html" class="logo">SRM - <span class="lite">FISI </span></a>
+                    <!--logo end-->
+
+                    <!--En esta parte cominza el menu personal del usuario-->
+                    <div class="top-nav notification-row">
+                        <ul class="nav pull-right top-menu">
+                            <!-- -->
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    <span class="username">Jenifer Smith</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu extended logout">
+                                    <div class="log-arrow-up"></div>
+                                    <li class="eborder-top">
+                                        <a href="#"><i class="icon_profile"></i> Mi Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="../index.html"><i class="icon_key_alt"></i> Cerrar Sesion</a>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Cerrar Sesion</a>
-                            </li>
-                            <li>
-                            </li>
+                            <!-- user login dropdown end -->
                         </ul>
-                    </li>
-                    <!-- user login dropdown end -->
-                </ul>
-                <!-- notificatoin dropdown end-->
-            </div>
-        </header>
-        <!--header end-->
+                        <!-- notificatoin dropdown end-->
+                    </div>
+                </header>
+                <!--header end-->
 
-        <!--Comienzo de la barra de navegacion -->
-        <aside>
-            <div id="sidebar" class="nav-collapse ">
-                <!-- sidebar menu start-->
-                <ul class="sidebar-menu">
-                    <li class="active">
-                        <a class="" href="index.html">
-                            <i class="icon_house_alt"></i>
-                            <span>Inicio</span>
-                        </a>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="">
-                            <i class="icon_document_alt"></i>
-                            <span>Solicitudes</span>
-                            <span class="menu-arrow arrow_carrot-right"></span>
-                        </a>
-                        <ul class="sub">
-                            <li><a class="" href="form_component.html">Generar Solucitud</a></li>
-                            <li><a class="" href="form_validation.html">Visualizar Solicitud</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <a href="javascript:;" class="">
-                            <i class="icon_table"></i>
-                            <span>Tables</span>
-                            <span class="menu-arrow arrow_carrot-right"></span>
-                        </a>
-                        <ul class="sub">
-                            <li><a class="" href="basic_table.html">Basic Table</a></li>
-                        </ul>
-                    </li>
+                <!--Comienzo de la barra de navegacion -->
+                <aside>
+                    <div id="sidebar" class="nav-collapse ">
+                        <!-- sidebar menu start-->
+                        <ul class="sidebar-menu">
+                            <li class="">
+                                <a class="" href="index.html">
+                                    <i class="icon_house_alt"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu active">
+                                <a href="javascript:;" class="active">
+                                    <i class="icon_document_alt"></i>
+                                    <span>Solicitudes</span>
+                                    <span class="menu-arrow arrow_carrot-right"></span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a class="" href="form_component.html">Generar Solucitud</a></li>
+                                    <li><a class="" href="form_validation.html">Visualizar Solicitud</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;" class="">
+                                    <i class="icon_table"></i>
+                                    <span>Tables</span>
+                                    <span class="menu-arrow arrow_carrot-right"></span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a class="" href="basic_table.html">Basic Table</a></li>
+                                </ul>
+                            </li>
+                            <li class="hidden-lg">
+                                <a class="" href="../index.html">
+                                    <i class="icon_house_alt"></i>
+                                    <span>Cerrar Sesion</span>
+                                </a>
+                            </li>
 
-                </ul>
-                <!-- sidebar menu end-->
-            </div>
-        </aside>
-        <!--======Fin de la barra de navegacion============================================================================= -->
+
+                        </ul>
+                        <!-- sidebar menu end-->
+                    </div>
+                </aside>  <!--======Fin de la barra de navegacion============================================================================= -->
 
         <!--main content start-->
         <section id="main-content">
@@ -132,48 +136,41 @@
                         </section>
                     </div>
                 </div>
-
                 <div class="row">
                     <!-- Bootsrep Editor -->
                     <!-- CKEditor -->
                     <div class="col-lg-12">
                         <section class="panel">
                             <header class="panel-heading">
-                                Adjuntar Archivos
+                                Firma Digital
                             </header>
                             <div class="panel-body">
-
-                                <div class="form">
-                                    <div class="from-group">
-                                        <div class="col-md-6">
-                                            <label for="file"><stron>Reporte de  Matricula</stron></label>
-                                            <br>
-                                            <input type="file" class="btn btn-primary" placeholder="Matricula" required>
+                                <form class="form-horizontal" role="form" method="post" action="#">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Reporte Matricula</label>
+                                        <div class="col-lg-6">
+                                            <input type="file" class="form-control" id="fileMatricula" placeholder=" ">
                                         </div>
-                                        <div class="col-md-6">
-                                            <label for="file"> <stron>Historial Academico</stron></label>
-                                            <br>
-                                            <input type="file" class="btn btn-primary" required>
-                                        </div>
-
                                     </div>
-
-                                </div>
-
-
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <section class="panel">
-                            <header class="panel-heading">
-                                Enviar Solicitud
-                            </header>
-                            <div class="panel-body">
-                                <form class="form-horizontal" role="form" action="index.html">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Historial Academico</label>
+                                        <div class="col-lg-6">
+                                            <input type="file" class="form-control" id="fileHistorial" placeholder=" ">
+                                        </div>
+                                    </div>
+                                    <h4>Certificado Digital</h4>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Rutal del Certificado</label>
+                                        <div class="col-lg-6">
+                                            <input type="file" class="form-control" id="rutaCertificado" placeholder=" ">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Clave Primaria</label>
+                                        <div class="col-lg-6">
+                                            <input type="password" class="form-control" id="occupation" placeholder=" ">
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <div class="col-lg-offset-2 col-lg-10">
                                             <p>Mediante la presente me hago <u><em>responsable</em></u> de lo solicitado en rectificación de matricula, ampliación de matricula y/o anulación de matricula en la unidad de trámite documentario de la Facultad
@@ -186,8 +183,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="col-lg-offset-5 col-lg-6">
-                                            <button type="submit" class="btn btn-danger">Enviar Solicitud</button>
+                                        <div class="col-lg-offset-2 col-lg-10">
+                                            <button type="submit" class="btn btn-primary " data-backdrop="static" data-keyboard="false" href="#modalValidacion" data-toggle="modal">Enviar Solicitud</button>
+                                            <button type="button" class="btn btn-danger">Cancelar Solicitud</button>
                                         </div>
                                     </div>
                                 </form>
@@ -195,9 +193,38 @@
                         </section>
                     </div>
                 </div>
-                <!-- page end-->
+          <!-- page end-->
             </section>
         </section>
+
+        <!--============MODAL QJUE INDICA QUE EL DOCUMENTO SE FIRMO CORRECTAMENTE-->
+        <div class="modal fade" id="modalValidacion" role="dialog">
+            <div class="modal-dialog ">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h4 class="modal-title">  Solicitud Realizada</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid alert alert-success" >
+                            <label for=""><span class="glyphicon glyphicon-ok"></span>  Documento Firmado Exitosamente </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <form action="index.html">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success  col-xs-offset-3 col-xs-6">Aceptar</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--========Fin del Modal -->
+
+
         <!--main content end-->
         <div class="text-right">
             <div class="credits">
