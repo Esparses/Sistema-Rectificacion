@@ -1,30 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page1{
-  width: 360px;
+  width: auto;
   padding: 8% 0 0;
   float: left;
-  margin-left: 15%; 
-}
-
-.login-page2{
-  width: 360px;
-  padding: 8% 0 0;
-  float: right;
-  margin-right:15%
+  margin-left: 15%;
 }
 .form {
   position: relative;
   z-index: 1;
   background: #FFFFFF;
-  max-width: 360px;
+  max-width: auto;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
    font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
+  -moz-osx-font-smoothing: grayscale;
 }
 .form input {
   font-family: "Roboto", sans-serif;
